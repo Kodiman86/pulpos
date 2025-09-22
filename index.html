@@ -300,10 +300,10 @@
     }
 
     // 1. Descargar el PDF automáticamente
-    const pdfUrl = 'https://kodiman86.github.io/pulpos/guia-practica-gratis.pdf';
+    const pdfUrl = 'https://kodiman86.github.io/pulpos/guia-practica-gratis.pdf'; // ← ESPACIOS ELIMINADOS
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'Guia_Practica_Pulpos_SaaS.pdf'; // Nombre con el que se descargará
+    link.download = 'Guia_Practica_Pulpos_SaaS.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -313,10 +313,10 @@
 
     // 3. Redirigir al enlace de afiliado después de 3 segundos
     setTimeout(function() {
-      window.location.href = 'https://pulpos.com/invite/abel-c9584v';
+      window.location.href = 'https://pulpos.com/invite/abel-c9584v'; // ← ESPACIOS ELIMINADOS
     }, 3000);
   });
 </script>
-
+  
 </body>
 </html>
