@@ -249,32 +249,6 @@
     <a href="#lead" class="btn scroll-btn">Quiero mi tienda en línea ahora</a>
   </section>
 
-  <script>
-    // Scroll suave
-    document.querySelectorAll('.scroll-btn').forEach(button => {
-      button.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    // Manejo del formulario
-    document.getElementById('leadForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const nombre = document.getElementById('nombre').value;
-      const email = document.getElementById('email').value;
-
-      if (!nombre || !email) {
-        alert('Por favor, completa todos los campos.');
-        return;
-      }
-
-      // Aquí normalmente enviarías los datos a tu CRM o email marketing
-      // Por ahora, solo mostramos un mensaje y redirigimos
 <script>
   // Scroll suave
   document.querySelectorAll('.scroll-btn').forEach(button => {
@@ -300,10 +274,10 @@
     }
 
     // 1. Descargar el PDF automáticamente
-    const pdfUrl = 'https://kodiman86.github.io/pulpos/guia-practica-gratis.pdf'; // ← ESPACIOS ELIMINADOS
+    const pdfUrl = 'https://kodiman86.github.io/pulpos/guia-practica-gratis.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'Guia_Practica_Pulpos_SaaS.pdf';
+    link.download = 'Guia_Practica_Pulpos_SaaS.pdf'; // Nombre con el que se descargará
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -313,7 +287,7 @@
 
     // 3. Redirigir al enlace de afiliado después de 3 segundos
     setTimeout(function() {
-      window.location.href = 'https://pulpos.com/invite/abel-c9584v'; // ← ESPACIOS ELIMINADOS
+      window.location.href = 'https://pulpos.com/invite/abel-c9584v';
     }, 3000);
   });
 </script>
